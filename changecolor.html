@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Change Colors Example</title>
+    <style>
+        body {
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Click the button to change colors:</h2>
+    <button onclick="changeColors()" ondblclick="restoreDefaultColors()">Click Me</button>
+
+    <script>
+        // Function to change colors on click
+        function changeColors() {
+            document.body.style.backgroundColor = 'blue';
+            document.body.style.color = 'red';
+        }
+
+        // Function to restore default colors on double click
+        function restoreDefaultColors() {
+            document.body.style.backgroundColor = '';
+            document.body.style.color = '';
+        }
+    </script>
+
+</body>
+</html>
