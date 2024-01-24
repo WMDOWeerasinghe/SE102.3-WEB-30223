@@ -1,0 +1,29 @@
+<html>
+<head>
+    
+    <title>Change Background Color Example</title>
+    <style>
+        p {
+            padding: 20px;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Move your mouse over the paragraph:</h2>
+
+    <p onmouseover="changeColor(this, 'yellow')" onmouseout="changeColor(this, 'red')">
+        This is a paragraph. Move your mouse over me!
+    </p>
+
+    <script>
+        function changeColor(element, color) {
+            element.style.backgroundColor = color;
+        }
+    </script>
+
+</body>
+</html>
+
